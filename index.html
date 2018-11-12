@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<title>자바 스터디 </title>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section data-markdown
+                 data-separator="^~!@!~"
+                 data-separator-vertical="^~!~"
+                 data-separator-notes="^Note:">
+                    <script type="text/template">
+# Java Study
+
+
+
+~!@!~
+## 자바란?
+~!~
+- 객체지향 언어  
+- 자바 가상머신을 거쳐 해석 및 실행  
+- 바이트코드를 생성 >>  
+ 하드웨어에 종속정이지 않은 중간파일  
+- OS에 상관없이 동일한 프로그램을  
+ 개발, 실행가능하다.
+
+~!~
+ - JDK :  
+ 자바 프로그램 개발에 필요한 구성 요소
+ - JRE :  
+ 자바 프로그램 실행에 필요한 구성 요소
+ - API :  
+ 자바 응용 프로그램 개발에 사용하는 라이브러리 
+~!@!~
+## 기초 문법
+~!~
+### 변수와 자료형  
+ - 인스턴스 변수 클래스 변수 지역 변수 파라미터
+ - 지원하는 기본 자료형(프리미티브 타입)은 정수형 실수형 논리형
+~!~
+리터럴 
+- 프로그램 언어에서 문자열 그 자체가 값을 나타내는 것.
+~!~
+논리 연산자  
+```cs
+조건식?T:F
+```
+~!@!~
+반복문
+~!~
+- for문 
+- for(초기화; 조건; 반복)
+- for(변수 : 배열)
+~!@!~
+Collection Framework
+~!~
+- ArrayList
+- Vector
+- LinkedList
+- HashMap
+~!@!~
+메소드
+~!~
+#### 메소드
+-메소드는 기존의 언어에서의 함수와 대응되는 개념  
+ 객체의 상태 및 속성 변경과 같이  
+ 객체에 대해 수행할 수 있는 작업을 정의한다. 
+~!~
+#### 오버라이딩
+- 오버라이딩이란 상위 클래스가 가지고 있는 
+ 메소드가 하위 클래스로 상속될 때 이를 재정의하여 사용할 수 있도록 하는 기능이다.
+~!~
+#### 캡슐화
+- 관련된 데이터와 알고리즘이 하나의 묶음으로 정리되어있는 것 
+알고리즘을 하나로 묶고, 객체의 내부를 보호하기 위해 만들어짐(정보 은닉)
+~!~
+#### 상속
+객체 지향 프로그래밍(OOP)에서, 상속(inheritance)은 객체들 간의 관계를 구축하는 방법이다.
+클래스로 객체가 정의되는 고전 상속에서, 클래스는 기반 클래스, 수퍼클래스, 또는 부모 클래스 등의
+기존의 클래스로부터 속성과 동작을 상속받을 수 있다. 
+그 결과로 생기는 클래스를 파생 클래스, 서브클래스, 또는 자식 클래스라고 한다.
+상속을 통한 클래스들의 관계는 계층을 형성한다.
+프로토타입 기반 프로그래밍에서는, 객체가 클래스를 따로 
+정의할 필요 없이 다른 객체로부터 직접 정의될 수 있다.
+이러한 특징을 차등 상속이라고 부른다.
+~!~
+##### 상속을 하는 이유
+1. 상위 객체를 재사용해서 하위 객체를 빨리 개발할 수 있도록 한다.
+2. 반복된 코드의 중복을 줄여준다
+3. 유지 보수의 편리성을 제공해 준다.
+4. 객체의 다형성을 구현할 수 있다.
+~!~
+#### 다양성
+- 객체의 동작이 상황에 따라서 달라지는 것을 말한다.
+~!~
+#### 추상화
+- 불필요한 정보는 숨기고 중요한 정보만을 표현함으로 프로그램을 간단히 만드는 기법
+~!@!~
+쓰레드
+~!@!~
+# markdown
+#### 어짜피 메모할꺼 마크다운으로 저장하자!
+~!~
+##### 장점
+- 문법이 쉽다
+- 관리가 쉽다.
+- 지원 가능한 플랫폼과 프로그램이 다양
+
+##### 단점
+- 표준이 없다.
+- HTML로 만들수 있는 모든걸 만들순 없다.
+~!~
+- Header  
+
+``` 
+# a  
+## as  
+### asd
+#### asdf
+##### asdfg
+###### asdfgh
+```
+# a  
+## as  
+### asd
+#### asdf
+##### asdfg
+###### asdfgh
+~!~
+- 강조
+
+```
+_별표나언더바_  이태리체
+__별표2개나언더바2개__  굵음
+```
+ _별표나언더바_  
+ __별표2개나언더바2개__
+ 
+
+~!~
+- List
+
+```
+1. 순서
+1. 순서
+  - 순서가 필요하지 않은 목록 
+  - 순서가 필요하지 않은 목록 
+1. 순서
+  1. 순서가 필요한 목록
+  1. 순서가 필요한 목록
+1. 순서
+
+- 순서가 필요하지 않은 목록에 사용 가능한 기호
+  - 대쉬(hyphen)
+  * 별표(asterisks)
+  + 더하기(plus sign)
+```
+
+~!~
+1. 순서가 필요한 목록
+1. 순서가 필요한 목록
+  - 순서가 필요하지 않은 목록(서브) 
+  - 순서가 필요하지 않은 목록(서브) 
+1. 순서가 필요한 목록
+  1. 순서가 필요한 목록(서브)
+  1. 순서가 필요한 목록(서브)
+1. 순서가 필요한 목록
+
+- 순서가 필요하지 않은 목록에 사용 가능한 기호
+  - 대쉬(hyphen)
+  * 별표(asterisks)
+  + 더하기(plus sign)
+
+~!~
+- Link  
+
+```
+[GOOGLE](https://google.com)
+
+[NAVER](https://naver.com "링크 설명(title)을 작성하세요.")
+
+[상대적 참조](../users/login)
+
+[Dribbble][Dribbble link]
+
+[GitHub][1]
+
+문서 안에서 [참조 링크]를 그대로 사용할 수도 있습니다.
+
+다음과 같이 문서 내 일반 URL이나 꺾쇠 괄호(`< >`, Angle Brackets)안의 URL은 자동으로 링크를 사용합니다.
+구글 홈페이지: https://google.com
+네이버 홈페이지: <https://naver.com>
+
+[Dribbble link]: https://dribbble.com
+[1]: https://github.com
+[참조 링크]: https://naver.com "네이버로 이동합니다!"
+```
+~!~
+[GOOGLE](https://google.com)
+
+[NAVER](https://naver.com "링크 설명(title)을 작성하세요.")
+
+[상대적 참조](../users/login)
+
+[Dribbble][Dribbble link]
+
+[GitHub][1]
+
+문서 안에서 [참조 링크]를 그대로 사용할 수도 있다.
+
+~!~
+다음과 같이 문서 내 일반 URL이나   
+꺾쇠 괄호(`< >`, Angle Brackets)안의  
+URL은 자동으로 링크를 사용합니다.  
+구글 홈페이지: https://google.com  
+네이버 홈페이지: <https://naver.com>  
+[Dribbble link]: https://dribbble.com  
+[1]: https://github.com  
+[참조 링크]: https://naver.com "네이버로 이동합니다!"  
+~!~
+- img  
+링크 앞에 ! 가 붙는다.
+
+```
+![대체 텍스트(alternative text)를 입력하세요!](http://www.gstatic.com/webp/gallery/5.jpg "링크 설명(title)을 작성하세요.")
+
+![Kayak][logo]
+
+[logo]: http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking."
+```
+
+![대체 텍스트(alternative text)를 입력하세요!](http://www.gstatic.com/webp/gallery/5.jpg "링크 설명(title)을 작성하세요.")
+
+![Kayak][logo]
+
+[logo]: http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking."
+~!~
+- img link
+
+```bash
+[![Vue](/images/vue.png)](https://kr.vuejs.org/)
+```
+
+[![Vue](/images/vue.png)](https://kr.vuejs.org/)
+
+~!~
+- table 
+```
+| 값 | 의미 | 기본값 |
+|---|:---:|---:|
+| `static` | 유형(기준) 없음 / 배치 불가능 | `static` |
+| `relative` | 요소 자신을 기준으로 배치 |  |
+| `absolute` | 위치 상 부모(조상)요소를 기준으로 배치 |  |
+| `fixed` | 브라우저 창을 기준으로 배치 |  |
+```
+
+| 값 | 의미 | 기본값 |
+|---|:---:|---:|
+| `static` | 유형(기준) 없음 / 배치 불가능 | `static` |
+| `relative` | 요소 자신을 기준으로 배치 |  |
+| `absolute` | 위치 상 부모(조상)요소를 기준으로 배치 |  |
+| `fixed` | 브라우저 창을 기준으로 배치 |  |
+
+~!~
+그냥 HTML 코드 써도 된다~
+
+~!@!~
+앞으로 해야할 것
+
+- git?
+- 자바 2주만더할까?
+
+					
+					</script>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+                history:true,
+                mouseWheel: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
